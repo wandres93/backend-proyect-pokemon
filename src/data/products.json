@@ -1,0 +1,28 @@
+[
+	{
+		"id": 1,
+		"status": true,
+		"thumbnails": [
+			"pikachu.jpg"
+		],
+		"title": "Pikachu",
+		"description": "Pokémon tipo eléctrico. Ratón.",
+		"code": "PIKA001",
+		"price": 500,
+		"stock": 25,
+		"category": "Electrico"
+	},
+	{
+		"id": 2,
+		"status": true,
+		"thumbnails": [
+			"charmander.jpg"
+		],
+		"title": "Charmander",
+		"description": "Pokémon tipo fuego. Lagartija.",
+		"code": "CHAR004",
+		"price": 450,
+		"stock": 10,
+		"category": "Fuego"
+	}
+]
