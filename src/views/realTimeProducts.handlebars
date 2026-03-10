@@ -1,0 +1,61 @@
+<h1>{{title}}</h1>
+
+<!-- Formulario para agregar productos -->
+<div class="card p-3 mb-4 bg-light">
+  <h3>Agregar Nuevo Pokémon</h3>
+  <form id="productForm">
+    <input
+      type="text"
+      id="title"
+      placeholder="Nombre (ej: Pikachu)"
+      class="form-control mb-2"
+      required
+    />
+    <input
+      type="text"
+      id="description"
+      placeholder="Descripción"
+      class="form-control mb-2"
+      required
+    />
+    <input
+      type="number"
+      id="price"
+      placeholder="Precio"
+      class="form-control mb-2"
+      required
+    />
+    <input
+      type="text"
+      id="code"
+      placeholder="Código (ej: P001)"
+      class="form-control mb-2"
+      required
+    />
+    <input
+      type="number"
+      id="stock"
+      placeholder="Stock"
+      class="form-control mb-2"
+      required
+    />
+    <input
+      type="text"
+      id="category"
+      placeholder="Categoría"
+      class="form-control mb-2"
+      required
+    />
+    <button type="submit" class="btn btn-primary">Agregar Pokémon</button>
+  </form>
+</div>
+
+<hr />
+
+<h3>Inventario en Vivo</h3>
+<!-- Aquí se inyectarán los productos vía JS -->
+<div id="productsList" class="row"></div>
+
+<!-- Importante: Script de Socket.io (cliente) y nuestro script -->
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/realTimeProducts.js"></script>
